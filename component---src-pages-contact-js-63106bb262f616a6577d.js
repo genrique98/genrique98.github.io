@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[501],{262:function(e,t,a){"use strict";a.r(t);var l=a(7294),n=a(5444),c=a(5127),r=a(3751);t.default=function(){return l.createElement(c.Z,null,l.createElement(r.Z,{title:"Contact"}),l.createElement("h1",null,"About me / Contact"),l.createElement("p",null,"Welcome to page 2"),l.createElement(n.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-63106bb262f616a6577d.js.map
