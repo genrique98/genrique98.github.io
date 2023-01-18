@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
-const repo = 'genrique98.github.io'
-const assetPrefix = `/${repo}/`
-const basePath = `/${repo}`
+// const repo = 'genrique98.github.io'
+// const assetPrefix = `/${repo}/`
+// const basePath = `/${repo}`
+// const basePath = './'
+// const assetPrefix = ''
 
 const nextConfig = {
   reactStrictMode: true,
@@ -11,8 +13,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  // assetPrefix: assetPrefix,
+  // basePath: basePath,
 }
 
 module.exports = nextConfig
