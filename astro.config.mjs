@@ -7,6 +7,5 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
 	site: 'https://genrique98.github.io',
-	base: 'genrique98.github.io',
 	integrations: [mdx(), sitemap()],
   })
