@@ -15,6 +15,13 @@ permissions:
   id-token: write
 
 jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+        - uses: actions/checkout@v4
+        - name: Setup pnpm
+          uses: pnpm/action-setup@v4
   build:
     runs-on: ubuntu-latest
     steps:
