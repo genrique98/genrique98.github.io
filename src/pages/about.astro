@@ -5,17 +5,16 @@ import Layout from '../layouts/BlogPost.astro';
 <Layout
 	title="About Me"
 	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('December 28 2024')}
 	heroImage="/blog-placeholder-about.jpg"
 >
-	<h2>Objective</h2>
+	<h2>Summary</h2>
 	<p>
 		Computer science graduate with a passion for technical writing and software testing. Dedicated to lifelong learning, and eager to solve complex problems.
 	</p>
 
 	<h2>Professional Experience</h2>
 	<h3>TeleOperations Coordinator at Zoox</h3>
-	<p>July 2023 - Present</p>
+	<p class="description"><i>July 2023 - Present</i></p>
 	<ul>
 		<li>Supervising a Fleet of Robotaxi vehicles</li>
 		<li>Proctoring Software-In-The-Loop training</li>
@@ -23,7 +22,7 @@ import Layout from '../layouts/BlogPost.astro';
 		<li>Scheduling R&D tests for remote operators</li>
 	</ul>
 	<h3>TeleOperations Tactician at Zoox</h3>
-	<p>February 2022 - July 2023</p>
+	<p class="description"><i>February 2022 - July 2023</i></p>
 	<ul>
 		<li>Provided remote operational guidance for Level 3 and 4 autonomous vehicles in complex driving scenarios.</li>
 		<li>Diagnosed and resolved system faults with our in-house software</li>
@@ -33,8 +32,8 @@ import Layout from '../layouts/BlogPost.astro';
 	</ul>
 
 	<h2>Education</h2>		
-	<h3>Bachelor of Science, Computer Science and Engineering, May 2021.</h3>
-	<p>University of California, Merced</p>
+	<h3>Bachelor of Science, Computer Science and Engineering</h3>
+	<p class="description"><i>University of California, Merced. May 2021.</i></p>
 	<ul>
 		<li>Algorithm Design and Analysis</li>
 		<li>Computer Architecture</li>
@@ -48,8 +47,8 @@ import Layout from '../layouts/BlogPost.astro';
 		<li>Linear Algebra and Differential equations</li>
 	</ul>
 
-	<h3>Nanodegree in Full Stack Web Development, 2021.</h3>
-	<p>Udacity Online Course</p>
+	<h3>Nanodegree in Full Stack Web Development</h3>
+	<p class="description"><i>Udacity Online Course, 2021.</i></p>
 	<ul>
 		<li>Express JS API and PostgreSQL database</li>
 		<li>Angular Single-Page Application</li>
@@ -75,3 +74,19 @@ import Layout from '../layouts/BlogPost.astro';
 		<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
 	</ul> -->
 </Layout>
+
+<style>
+	/* ul {
+		padding: 0;
+		margin: 0;
+	} */
+	li {
+		margin-bottom: 0;
+	}
+
+	.description {
+		margin: 0;
+		margin-bottom: 0;
+		font-size: 16px;
+	};
+</style>
