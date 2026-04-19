@@ -3,19 +3,66 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Info from '../components/Info.astro';
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<ClientRouter/>
+
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			.prose {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.prose p {
+				margin-bottom: 1.25em;
+			}
+
+			.avatar {
+				border-radius: 8px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				transform: rotate(-5deg);
+			}
+
+			.avatar-container {
+				padding: 20px 0px;
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 1em;
+				color: rgb(var(--gray-dark));
+				}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>Hola, I'm Gabe!</h1>
-			<p>I'm an operations analyst and technical writer specializing in the tech industry.</p>
-
+			<section class="avatar-container">
+				<img class="avatar" src="gabe-portrait-240.png"/>
+			</section>
+			<section class="prose">
+				<div>
+					<h1>Hola, I'm Gabe!✌️</h1>
+				</div>
+				<p>I'm a technical writer, analyst, and technologist.</p>
+				<p>Currently, I'm a TeleOperations coordinator at Zoox, where I supervise the robotaxi fleet, coordinate and oversee R&D tests, document operational workflows, and design simulations to train operators.</p>
+				<p>I enjoy working at the intersection of systems, storytelling, and operations, where I can document and optimize processes, analyze and solve problems, and most importantly, help teams build great products.</p>
+				<p>In my spare time I spread myself thin learning and writing about data analysis, web development, and LLMs.</p>
+				<p>I value your feedback! Please feel free to share anything you see here. For any inquiries, you can reach me at <a href="mailto:egramirez.gabriel@gmail.com" style="color: #009A95; text-decoration: none;">egramirez.gabriel@gmail.com</a></p>
+			</section>
+			<!-- <Info/> -->
 		</main>
 		<Footer />
 	</body>

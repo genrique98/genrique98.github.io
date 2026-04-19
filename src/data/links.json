@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Substack",
+        "description": "Subscribe to my Substack",
+        "url": "#",
+	    "icon": "/",
+        "color": "#ccc"
+    },
+    {
+        "title": "Mirror",
+        "description": "Subscribe to my Mirror",
+        "url": "#",
+	    "icon": "/",
+        "color": "#ccc"
+    },
+    {
+        "title": "Paragraph",
+        "description": "Subscribe to my Paragraph",
+        "url": "#",
+	    "icon": "/",
+        "color": "#ccc"
+    },
+    {
+        "title": "Farcast",
+        "description": "Follow me on Farcast",
+        "url": "#",
+	    "icon": "/",
+        "color": "#ccc"
+    }
+]

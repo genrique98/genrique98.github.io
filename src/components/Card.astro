@@ -1,0 +1,67 @@
+
+<div class="card" style={"background-color: " + Astro.props.color}>
+  <a href={Astro.props.href} class="link">
+    <p class="description">{Astro.props.description}</p>
+  </a>
+</div>
+
+<style>
+.card {
+  
+  width: auto; /* Fixed square size */
+  /* max-width: auto; */
+  height: 25px;
+  max-height: 25px;
+  /* max-width: 254px; */
+  /* aspect-ratio: auto; Reset aspect ratio to default */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* overflow-y: ; */
+  cursor: pointer;
+}
+
+.card p {
+    font-size: 0.8em;
+    /* text-align: left; */
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive adjustments */
+@media (min-width: 900px) {
+  .card {
+    width: auto;
+    max-width: auto;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+    justify-content: center;
+    width: auto;
+    max-width: auto;
+    /* text-overflow: ellipsis; */
+  }
+}
+
+</style>

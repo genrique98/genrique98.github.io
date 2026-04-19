@@ -1,0 +1,24 @@
+---
+import Card from "./Card.astro" 
+import links from "../data/links.json"
+---
+
+<div class="info">
+    {links.map(link => (
+        <Card key={link.title} description={link.description} color={link.color}></Card>
+    ))}
+</div>
+
+<style>
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        height: 250px;
+        width: 250px;
+        border: 1px solid #ccf;
+        padding: 20px 5px
+    }
+</style>
